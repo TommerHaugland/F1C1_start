@@ -3,6 +3,11 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+
+}
+
+header {
+  z-index: 6000;
 }
 
 .main-content {
@@ -18,6 +23,13 @@ html {
   border-radius: 4px;
   background-color: #4a4a4a;
   color: white;
+  margin-top: 26px;
+}
+
+.images-container {
+  display: flex;
+    width: 100%;
+    height: auto;
 }
 
 .image-container {
@@ -26,6 +38,23 @@ html {
 
 .image-container img {
   display: block;
+  width: 100%;
+    height: auto;
+}
+
+.banner {
+  background-image: url(../images/banner-landingpage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature {
+  margin-top: 64px;
+  padding-top: 32px;
+}
+
+.content {
+  padding: 37.5px 0;
 }
 
 @media only screen and (max-width: 760px) {
@@ -47,10 +76,12 @@ header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem;
+  margin-right: 30px;
 }
 
 header .logo {
   flex: 1;
+  margin-left: 30px;
 }
 
 header nav ul {
@@ -63,6 +94,7 @@ nav li {
 
 nav a {
   vertical-align: bottom;
+  font-family: Roboto-Regular, sans-serif;
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
@@ -124,6 +156,7 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin: 170px 0 0 100px;
 }
 
 #sign-up-cta .content {
@@ -153,7 +186,9 @@ header .mobile {
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
-  padding-bottom: .75rem;
+    padding-bottom: .75rem;
+    font-size: 50px;
+    line-height: 1.4;
 }
 
 #sign-up-cta .button {
@@ -212,21 +247,21 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 7rem 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
   background-color: white;
+  margin-right: 38px;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .feature h2 {
